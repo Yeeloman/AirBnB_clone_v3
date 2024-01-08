@@ -20,10 +20,10 @@ def jsonstatus():
 @app_views.route('/api/v1/stats', methods=['GET'])
 def getstats():
     """endpoint that retrives the number of each obcts by type"""
-    dicreturn = {"amenities": storage.count(Amenity),
-                 "cities": storage.count(City),
-                 "places": storage.count(Place),
-                 "reviews": storage.count(Review),
-                 "states": storage.count(State),
-                 "users": storage.count(User)}
+    dicreturn = {'amenities': storage.count('Amenity'),
+                 'cities': storage.count('City'),
+                 'places': storage.count('Place'),
+                 'reviews': storage.count('Review'),
+                 'states': storage.count('State'),
+                 'users': storage.count('User')}
     return jsonify(dicreturn)
