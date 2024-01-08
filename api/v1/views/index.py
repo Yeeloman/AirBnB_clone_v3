@@ -17,7 +17,7 @@ def jsonstatus():
     return jsonify(status='OK')
 
 
-@app_views.route('/api/v1/stats', methods=['GET'], strict_slashes=False)
+@app_views.route('/v1/stats', methods=['GET'], strict_slashes=False)
 def getstats():
     """endpoint that retrives the number of each obcts by type"""
     dicreturn = {'amenities': storage.count('Amenity'),
