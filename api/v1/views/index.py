@@ -11,13 +11,13 @@ from models.amenity import Amenity
 from models.user import User
 
 
-@app_views.route('/status', methods=['GET'])
+@app_views.route('/status', methods=['GET'], strict_slashes=False)
 def jsonstatus():
     """the return ok status"""
     return jsonify(status='OK')
 
 
-@app_views.route('/api/v1/stats', methods=['GET'])
+@app_views.route('/api/v1/stats', methods=['GET'], strict_slashes=False)
 def getstats():
     """endpoint that retrives the number of each obcts by type"""
     dicreturn = {'amenities': storage.count('Amenity'),
