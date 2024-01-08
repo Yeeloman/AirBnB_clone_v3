@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""the __init__.py file that has the Blueprint"""
+"""Creates a Blueprint instance with `url_prefix` set to `/api/v1`."""
 from flask import Blueprint
 from api.v1.views.index import *
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this is the index file"""
+"""Create a Route `/status` on the object app_views."""
 from api.v1.views import app_views
 from flask import jsonify
 

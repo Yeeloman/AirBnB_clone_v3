@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""the app file"""
+"""
+reate Flask app; and register the blueprint app_views to Flask instance app.
+"""
 from flask import Flask, jsonify
 from models import storage
 from api.v1.views import app_views
@@ -12,7 +14,9 @@ app.url_map.strict_slashes = False
 
 @app.teardown_appcontext
 def teardown(args):
-    """returns the storage close"""
+    """
+    Removes the current SQLAlchemy Session object after each request.
+    """
     storage.close()
 
 
