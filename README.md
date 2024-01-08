@@ -151,12 +151,11 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time. 
+No known bugs at this time.
 
 ## Authors
 Mohamed Kaddouri- [Github](https://github.com/Yeeloman)
 Zakaria Afyf - [Github](https://github.com/Yandelf00)
 
-Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
